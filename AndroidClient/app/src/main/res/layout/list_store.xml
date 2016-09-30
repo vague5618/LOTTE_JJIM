@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dp"
+android:background="#ffffff">
+
+<TextView
+    android:id="@+id/mText_StoreName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:text="지점이름"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_marginLeft="10dp"
+    android:textSize="15dp"
+    android:layout_alignParentTop="false"
+    android:layout_marginTop="5dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="주소1"
+    android:id="@+id/mText_Address"
+    android:textColor="@color/black_overlay"
+    android:textSize="10dp"
+    android:layout_below="@+id/mText_StoreName"
+    android:layout_alignStart="@+id/mText_StoreName"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_alignParentEnd="true"/>
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/mBtn_ShowStoreMap"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_place"
+    android:background="#00ffffff"
+    android:layout_marginRight="5dp"
+    android:layout_alignTop="@+id/mBtn_AddStore"
+    android:layout_toStartOf="@+id/mBtn_AddStore" />
+
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/mBtn_AddStore"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_star"
+    android:background="#00ffffff"
+    android:layout_alignTop="@+id/mText_StoreName"
+    android:layout_alignEnd="@+id/mText_Address"
+    android:layout_marginRight="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.n.lotte_jjim.Activity.Activity.IncheonSearchActivity1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="▼ 구·군 단위 선택"
+        android:id="@+id/mText_Location"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_overlay"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"
+        android:textStyle="normal|bold"
+        android:textIsSelectable="false"
+        android:layout_weight="6" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_weight="0.5"
+        android:fillViewport="true"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="강화군"
+                    android:id="@+id/mBtn_Gwanghwa"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="계양구"
+                    android:id="@+id/mBtn_Geyang"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="남구"
+                    android:id="@+id/mBtn_Nam"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="남동구"
+                    android:id="@+id/mBtn_Namdong"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="동구"
+                    android:id="@+id/mBtn_Dong"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="부평구"
+                    android:id="@+id/mBtn_Bupyeong"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="서구"
+                    android:id="@+id/mBtn_Seo"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="연수구"
+                    android:id="@+id/mBtn_Yeonsoo"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="옹진군"
+                    android:id="@+id/mBtn_Onngjin"
+                    android:layout_weight="3"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="중구"
+                    android:id="@+id/mBtn_Jung_Incheon"
+                    android:layout_weight="3"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#008835"
+                    android:textColor="#ffffff"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/mBtn_Yangcheon"
+                    android:layout_weight="2"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:background="#eeeeee"
+                    android:textColor="#eeeeee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/mBtn_empty1"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:background="#eeeeee"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#eeeeee"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

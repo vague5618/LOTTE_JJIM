@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#eeeeee"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mImage_CurrentProductImg"
+        android:src="@drawable/cherry"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상품명"
+        android:id="@+id/mText_CurrentProduct"
+        android:textColor="#6b1900"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:layout_alignTop="@+id/mImage_CurrentProductImg"
+        android:layout_toEndOf="@+id/mImage_CurrentProductImg"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="상품가"
+        android:id="@+id/mText_OrderContent1"
+        android:textColor="#707070"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:layout_below="@+id/mText_CurrentProduct"
+        android:layout_alignStart="@+id/mText_CurrentProduct"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원가"
+        android:id="@+id/mText_OriginPrice"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/mText_OrderContent1"
+        android:layout_toEndOf="@+id/mText_OrderContent1"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mList_DongStore"
+        android:layout_below="@+id/mImage_CurrentProductImg"
+        android:background="#ffffff" />
+
+</RelativeLayout>

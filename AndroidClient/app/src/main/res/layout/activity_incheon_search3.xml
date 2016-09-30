@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.n.lotte_jjim.Activity.Activity.IncheonSearchActivity3"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="▼ &quot;산곡동&quot;에 위치한 매장"
+        android:id="@+id/mText_Location"
+        android:gravity="center_vertical"
+        android:textColor="@color/lightGray"
+        android:layout_marginLeft="0dp"
+        android:textSize="12dp"
+        android:textStyle="normal|bold"
+        android:textIsSelectable="false"
+        android:layout_weight="5"
+        android:background="#008835"
+        android:paddingLeft="10dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id ="@+id/mList_Store"
+        android:layout_weight="0.8">
+    </ListView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="&apos;동&apos;단위로 상품 검색"
+        android:id="@+id/mBtn_DongSearch"
+        android:layout_weight="5"
+        android:background="@color/colorOrange"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.n.lotte_jjim" >
+
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Activity.Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/seven"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        >
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyDMFwE-EHzCfHgNblnUHdfOCIiVpMtbBNw" /> -->
+
+        <activity android:name=".Activity.Activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.LoginActivity"
+            android:label="세바찜"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Activity.FavoriteActivity"
+            android:parentActivityName=".Activity.Activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.FavoriteSearchActivity1"
+            android:parentActivityName=".Activity.Activity.FavoriteActivity"
+            android:theme="@style/AppThemeWithButton" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.FavoriteSearchActivity2"
+            android:parentActivityName=".Activity.Activity.FavoriteSearchActivity1"
+            android:theme="@style/AppThemeWithButton" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.FavoriteSearchActivity3"
+            android:parentActivityName=".Activity.Activity.FavoriteSearchActivity2"
+            android:theme="@style/AppThemeWithButton" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.FavoriteSearchActivity4"
+            android:parentActivityName=".Activity.Activity.FavoriteSearchActivity3" >
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.Activity.StoreMapsActivity"
+            android:label="@string/title_activity_store_maps" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.ProductActivity"
+            android:label="@string/title_activity_product"
+            >
+            <!--android:theme="@style/AppTheme.NoActionBar" >-->
+        </activity>
+        <activity android:name=".Activity.Activity.OrderActivity1" >
+        </activity>
+        <activity android:name=".Activity.Activity.OrderFinishActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.StoreSearchActivity1"
+            android:parentActivityName=".Activity.Activity.MainActivity"
+            android:theme="@style/AppThemeWithButton" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.StoreSearchActivity2"
+            android:parentActivityName=".Activity.Activity.StoreSearchActivity1"
+            android:theme="@style/AppThemeWithButton" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.StoreSearchActivity3"
+            android:parentActivityName=".Activity.Activity.StoreSearchActivity2" >
+        </activity>
+        <activity android:name=".Activity.Activity.DongSearchActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.DongStockActivity"
+            android:parentActivityName=".Activity.Activity.DongSearchActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.SetupActivity"
+            android:parentActivityName=".Activity.Activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.JJimListActivity"
+            android:parentActivityName=".Activity.Activity.SetupActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.OrderListActivity"
+            android:parentActivityName=".Activity.Activity.SetupActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.PushActivity"
+            android:parentActivityName=".Activity.Activity.SetupActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.IncheonSearchActivity1"
+            android:parentActivityName=".Activity.Activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.IncheonSearchActivity2"
+            android:parentActivityName=".Activity.Activity.IncheonSearchActivity1" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.IncheonSearchActivity3"
+            android:parentActivityName=".Activity.Activity.IncheonSearchActivity2" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.NearStockActivity"
+            android:parentActivityName=".Activity.Activity.NearStoreActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.NearStoreActivity"
+            android:parentActivityName=".Activity.Activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".Activity.Activity.OrderDetailActivity"
+            android:parentActivityName=".Activity.Activity.OrderListActivity" >
+        </activity>
+
+
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.example.n.lotte_jjim" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener_service] -->
+        <service
+            android:name=".Activity.Service.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener_service] -->
+
+        <!-- [START instanceId_listener_service] -->
+        <service
+            android:name=".Activity.Service.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener_service] -->
+
+        <!-- [START gcm_registration_service] -->
+        <service
+            android:name=".Activity.Service.RegistrationIntentService"
+            android:exported="false"></service>
+        <!-- [END gcm_registration_service] -->
+
+    </application>
+
+</manifest>

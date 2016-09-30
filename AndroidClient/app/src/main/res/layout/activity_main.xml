@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.n.lotte_jjim.Activity.Activity.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.01"
+        android:background="@color/colorGray"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="안녕하세요, 세븐일레븐 찜입니다."
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#808080"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView3"
+            android:src="@drawable/seven"
+            android:layout_weight="4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.05"
+        android:background="#ffffff"
+        android:baselineAligned="false" >
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mBtn_Setting"
+            android:src="@drawable/setting"
+            android:scaleType="fitEnd"
+            android:background="#00ffffff"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.72"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="즐겨찾는 매장보기"
+            android:id="@+id/mBtn_Favorite"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#00FFFFFF"
+            android:textColor="#008835"
+            android:textSize="12dp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:padding="35dp"
+            android:gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_favoritesearch" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="주변 매장 상품검색"
+            android:id="@+id/mBtn_NearSearch"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:textColor="#008835"
+            android:textSize="12dp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:padding="35dp"
+            android:src="@drawable/ic_nearsearch"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.07"
+        android:background="#eeeeee">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="▼ 지역 단위별 전국매장 검색"
+            android:id="@+id/mText_Location"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_overlay"
+            android:layout_marginLeft="10dp"
+            android:textSize="12dp"
+            android:textStyle="normal|bold"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.03"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="서울"
+            android:id="@+id/mBtn_Seoul"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="인천"
+            android:id="@+id/mBtn_Incheon"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="경기"
+            android:id="@+id/mBtn_Geonggi"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="부산"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:id="@+id/mBtn_Busan"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.03"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="대구"
+            android:id="@+id/mBtn_Daegu"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="대전"
+            android:id="@+id/mBtn_Daejeon"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="광주"
+            android:id="@+id/mBtn_Gwangju"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="울산"
+            android:id="@+id/mBtn_Ulsan"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.03"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="충북"
+            android:id="@+id/mBtn_Chunbuk"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="경북"
+            android:id="@+id/mBtn_Gyeongbuk"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="전북"
+            android:id="@+id/mBtn_Jeonbuk"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="강원"
+            android:id="@+id/mBtn_Gangwon"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.03"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="충남"
+            android:id="@+id/mBtn_Cungnam"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="경남"
+            android:id="@+id/mBtn_Gyeongnam"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="전남"
+            android:id="@+id/mBtn_Jeonnam"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="제주"
+            android:id="@+id/mBtn_Jeju"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="#008835"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.02"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mBtn_AdURL"
+            android:src="@drawable/event_ad"
+            android:padding="0sp"
+            android:scaleType="fitXY"
+            android:background="#00ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

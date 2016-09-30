@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.n.lotte_jjim.Activity.Activity.FavoriteSearchActivity4"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="▼ &quot;가산동&quot;에 위치한 매장"
+        android:id="@+id/mText_Location"
+        android:gravity="center_vertical"
+        android:textColor="@color/lightGray"
+        android:textSize="12dp"
+        android:textStyle="normal|bold"
+        android:textIsSelectable="false"
+        android:layout_weight="6"
+        android:background="#008835"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id ="@+id/mList_Store"
+        android:layout_weight="0.5"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+    </ListView>
+</LinearLayout>

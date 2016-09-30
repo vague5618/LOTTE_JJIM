@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="No."
+        android:id="@+id/mText_Content1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="@color/colorOrange"
+        android:textColor="#ffffff"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="점포명"
+        android:id="@+id/mText_Content2"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:textColor="#808080"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/mText_Content1"
+        android:layout_toEndOf="@+id/mText_Content1"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="결제금액"
+        android:id="@+id/mText_Content3"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:textColor="#808080"
+        android:textSize="13dp"
+        android:layout_below="@+id/mText_Content2"
+        android:layout_alignStart="@+id/mText_Content2"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:id="@+id/mText_OrderNo"
+        android:textSize="13dp"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/mText_Content1"
+        android:layout_below="@+id/mText_Content1"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/mText_Content3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점포명"
+        android:id="@+id/mText_OrderStoreName"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/mText_Content2"
+        android:layout_toEndOf="@+id/mText_Content2"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000원"
+        android:id="@+id/mText_OrderPrice"
+        android:layout_alignTop="@+id/mText_Content3"
+        android:layout_alignStart="@+id/mText_OrderStoreName"
+        android:textSize="13dp"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/mBtn_OrderListConfirm"
+        android:textSize="14dp"
+        android:layout_centerVertical="true"
+        android:background="#00ffffff"
+        android:src="@drawable/ic_receipt"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"/>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/mBtn_OrderListDelete"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:background="#00ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/mBtn_OrderListConfirm"
+        android:src="@drawable/ic_delete"
+        android:scaleType="fitCenter" />
+</RelativeLayout>

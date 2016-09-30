@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.n.lotte_jjim.Activity.Activity.NearStoreActivity"
+    android:background="#eeeeee">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mBtn_Search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#008835"
+        android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mList_Product"
+        android:layout_below="@+id/mBtn_Search"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mText_SearchKeyword"
+        android:layout_above="@+id/mList_Product"
+        android:layout_alignStart="@+id/mList_Product"
+        android:layout_toStartOf="@+id/mBtn_Search"
+        android:background="#008835"
+        android:layout_alignTop="@+id/mBtn_Search"
+        android:textColor="#ffffff"
+        android:textCursorDrawable="@null"
+        android:theme="@style/AppTheme"
+        android:paddingLeft="20dp"
+        android:textColorHint="#81ce9f"
+        android:hint="검색할 상품명을 입력하세요"
+        android:textSize="12dp" />
+
+</RelativeLayout>
